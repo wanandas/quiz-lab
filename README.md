@@ -1,8 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Install dependencies,
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
 
 ```bash
 npm run dev
@@ -12,27 +18,36 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Task List
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+A. Write a task list application that allows users to create, view, update, and delete tasks. The app should have the following features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- A form for creating a new task, with a text input for the task description and a submit button.
+- A list of tasks, with each task displaying its description, due date, and completion status.
+- A checkbox that allows users to mark tasks as complete or incomplete.
+- The ability to edit or delete a task.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To complete this task, you will need to:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Use React to create a task list component that includes the above features.
+- Use state to manage the list of tasks and their completion status.
+- Use local storage to persist the list of tasks between page reloads.
+- Add appropriate error handling and validation to ensure that tasks are entered correctly.
+- The task list should be sortable by due date, completion status, or task description.
+- Tasks should be displayed in different colors depending on their completion status.
+- Users should be able to filter tasks by completion status.
+- Users should be able to delete all completed tasks at once.
 
-## Learn More
+## Room
 
-To learn more about Next.js, take a look at the following resources:
+B. Write a reservation system for meeting rooms. The app should allow users to view available rooms, reserve a room for a specified time period, and cancel a reservation.
+To complete this task, you will need to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Use an array to store the list of available rooms and their properties (e.g., room number, capacity, available time slots).
+- Use an object to store the list of reservations and their properties (e.g., room number, date, start time, end time, person who reserved).
+- Create a user interface that allows users to view available rooms, reserve a room for a specified time period, and cancel a reservation.
+- Add appropriate error handling and validation to ensure that reservations are entered correctly.
+- Users should be able to search for available rooms based on their capacity and the desired time period.
+- Users should be able to see the list of existing reservations and their details.
+- Users should be able to cancel their own reservations.
+- The app should have an admin interface that allows administrators to view and manage all reservations.
