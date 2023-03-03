@@ -1,13 +1,7 @@
 import styled from "@emotion/styled";
 import { Checkbox } from "./Checkbox";
 
-export const TaskList = ({
-  data = [],
-  onCompletion,
-  onDelete,
-  onEdit,
-  onSorting,
-}) => {
+export const TaskList = ({ data = [], onCompletion, onDelete, onSorting }) => {
   return (
     <TaskListWrapper>
       <h1>Task List</h1>
@@ -43,7 +37,6 @@ export const TaskList = ({
                 {item.completed ? "completed" : "not complete"}
               </span>
 
-              <button onClick={() => onEdit(item.id)}>Edit</button>
               <button onClick={() => onDelete(item.id)}>Delete</button>
             </div>
           ))}

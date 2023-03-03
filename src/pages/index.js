@@ -97,8 +97,6 @@ export default function Home() {
     });
   };
 
-  const handleEdit = (id) => {};
-
   const handleSorting = (type) => {
     const sorted = [...list].sort((a, b) =>
       a[type] > b[type] ? 1 : b[type] > a[type] ? -1 : 0
@@ -127,7 +125,6 @@ export default function Home() {
             data={list}
             onCompletion={handleCompletion}
             onDelete={handleDelete}
-            onEdit={handleEdit}
             onSorting={handleSorting}
           />
         </div>
